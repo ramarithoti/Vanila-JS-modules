@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users Management Application</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: black;color:#fff;text-align:center;padding: 1rem;font-size: 2em;">
+        Users Management Application
+    </header>
+    <main style="display: flex;flex-direction:column;justify-content:center;align-items:center">
+        <section id="users" style="padding: 1rem;font-size: 1.5em;">
+            <header style="text-decoration: underline">Availble Users</header>
+            <ul id="users-list" style="padding:0.3em;margin-left:1.3em">
+
+            </ul>
+        </section>
+        <section 
+        id="input-section" 
+        style="background:black;color:#fff;display: flex;padding: 0.3em;min-width: 50%;"
+        >
+            <input id="input" type="text" style="padding: 1.3em;min-width:80%;margin:0.5em;border:none;"
+            placeholder="Provide user name to add to list"
+            >
+            <button id="submit" style="padding: 1em;min-width:15%;margin:0.5em;border:none;">Add User</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+    <script src="users.js"></script>
+    <script src="dom.js"></script>
+</body>
+</html>
